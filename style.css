@@ -59,24 +59,6 @@ div {
     padding: 40px 30px;
 }
 
-.item:hover {
-    
-    animation: rora  ease;
-    animation-duration: 1s;
-}
-
-@keyframes rora {
-    0% {
-        opacity: 0;
-        transform: rotate(360deg) scale(1.5);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotate(0deg) scale(1);
-
-    }
-}
 
 .item img {
     max-height: 50px;
@@ -107,8 +89,12 @@ div {
     color: #000000;
     text-decoration: none;
     border-bottom: 1px solid #000;
+    transition: .3s ease-in-out;
 }
-
+.title-project:hover {
+    border-bottom: 1px solid transparent;
+    
+}
 .review {
     font-weight: 500;
     font-size: 15px;
